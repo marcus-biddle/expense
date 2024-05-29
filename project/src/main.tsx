@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Home } from './pages/Home.tsx';
+import { Settings } from './pages/Settings.tsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/:type/settings",
+        element: <Settings />,
       },
     ],
   },
